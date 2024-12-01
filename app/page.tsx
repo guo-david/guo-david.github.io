@@ -1,11 +1,13 @@
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+'use client'
+
+import { Hero } from "@/components/Hero/Hero";
+import { Header } from '../components/Header/Header'
 
 export default function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      <Header></Header>
+      <Hero></Hero>
     </>
   );
 }
