@@ -6,8 +6,8 @@ import { Header } from '../components/Header/Header'
 export default function HomePage() {
   return (
     <>
-      <Header></Header>
-      <Hero></Hero>
+      <Header/>
+      <Hero/>
     </>
   );
 }

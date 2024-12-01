@@ -1,5 +1,5 @@
 import { IconBrandLinkedinFilled, IconBrandGithubFilled, IconFileCv } from '@tabler/icons-react';
-import { Button, Container, Group, Image, List, Text, ThemeIcon, Title } from '@mantine/core';
+import { Button, Container, Group, List, Text, ThemeIcon, Title } from '@mantine/core';
 // import image from './image.svg';
 import classes from './Hero.module.css';
 

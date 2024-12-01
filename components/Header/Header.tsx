@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { Burger, Container, Group } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { Avatar, Anchor, Flex } from '@mantine/core';
+import { Avatar, Anchor, Flex, Burger, Container, Group } from '@mantine/core';
 import pfp from '../../public/pfp.jpg'
 import classes from './Header.module.css';
 
@@ -38,19 +37,19 @@ export function Header() {
                     gap="md"
                     align="center"
                 >
-                <Avatar
-                    radius="xl" 
-                    size="lg"
-                    src={pfp.src}
-                />
-                <Anchor
-                    href=""
-                    size="lg"
-                    variant="gradient"
-                    fw={900}
-                >
-                    David Guo
-                </Anchor>
+                    <Avatar
+                        radius="xl"
+                        size="lg"
+                        src={pfp.src}
+                    />
+                    <Anchor
+                        href=""
+                        size="lg"
+                        variant="gradient"
+                        fw={900}
+                    >
+                        David Guo
+                    </Anchor>
                 </Flex>
                 <Group gap={5} visibleFrom="xs">
                     {items}
