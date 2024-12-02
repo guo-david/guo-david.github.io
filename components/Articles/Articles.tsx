@@ -10,7 +10,6 @@ import {
   Stack,
   Text,
   Title,
-  useMantineTheme,
 } from '@mantine/core';
 import projects from '../../public/projects.json';
 import classes from './Articles.module.css';
