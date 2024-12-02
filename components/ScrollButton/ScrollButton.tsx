@@ -8,7 +8,7 @@ interface ScrollButtonProps {
 
 export function ScrollButton({ next }: ScrollButtonProps) {
   return (
-    <Group justify='center' style={{marginBottom: "240px"}}>
+    <Group justify='center' style={{marginBottom: "280px"}}>
       <ActionIcon size="50px" radius="25px" variant="subtle">
         {/* Improved usage of anchor */}
         <a href={next} style={{ color: 'grey', display: 'block', textDecoration: 'none' }}>
