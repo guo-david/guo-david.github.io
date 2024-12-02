@@ -56,14 +56,14 @@ export function ArticleCard(article: any) {
           {article.paper !== '' && (
             <ActionIcon size="lg" color="gray" variant="subtle">
               <a href={article.paper} target="_blank" rel="noreferrer" style={{ color: 'grey' }}>
-                <IconFileTypePdf size={18} stroke={1.5} />
+                <IconFileTypePdf size={18} stroke={2} />
               </a>
             </ActionIcon>
           )}
 
           <ActionIcon size="lg" color="gray" variant="subtle">
             <a href={article.repo} target="_blank" rel="noreferrer" style={{ color: 'grey' }}>
-              <IconBrandGithubFilled size={18} stroke={1.5} />
+              <IconBrandGithubFilled size={18} stroke={2} />
             </a>
           </ActionIcon>
         </Group>

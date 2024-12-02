@@ -1,13 +1,13 @@
 import { IconBrandGithubFilled, IconBrandLinkedinFilled, IconFileCv } from '@tabler/icons-react';
 import { Button, Container, Group, List, Text, ThemeIcon, Title } from '@mantine/core';
-// import image from './image.svg';
 import classes from './Hero.module.css';
+import { LINKS } from '@/app/constants';
 
 export function Hero() {
   return (
     <Container size="md">
-      <div className={classes.inner}>
-        <div className={classes.content} id="about-me">
+      <div className={classes.inner} id="about-me">
+        <div className={classes.content}>
           <Title className={classes.title}>
             <Group>
               Hi, I'm
@@ -33,8 +33,9 @@ export function Hero() {
           <List className={classes.list} mt={30} spacing="sm" size="md">
             <Button
               component="a"
-              href="https://www.linkedin.com/in/david-guo-1994221b7/"
-              target="_blank" rel="noreferrer"
+              href={LINKS.linkedin}
+              target="_blank"
+              rel="noreferrer"
               className={classes.listButton}
               variant="default"
             >
@@ -50,8 +51,9 @@ export function Hero() {
             </Button>
             <Button
               component="a"
-              href="https://github.com/davidguo123456"
-              target="_blank" rel="noreferrer"
+              href={LINKS.github}
+              target="_blank"
+              rel="noreferrer"
               className={classes.listButton}
               variant="default"
             >
@@ -67,8 +69,9 @@ export function Hero() {
             </Button>
             <Button
               component="a"
-              href="https://davidguo123456.github.io/CV-David-Guo.pdf"
-              target="_blank" rel="noreferrer"
+              href={LINKS.cv}
+              target="_blank"
+              rel="noreferrer"
               className={classes.listButton}
               variant="default"
             >
