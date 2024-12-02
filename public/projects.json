@@ -1,0 +1,27 @@
+{
+  "name": "projects",
+  "data": [
+    {
+      "key": 1,
+      "title": "Augmentation of WM811K Silicon Wafer Map Dataset for Error Pattern Detection Training",
+      "image": "https://davidguo123456.github.io/p1.png",
+      "description": "In this on-going project, I am investigating the efficacy of using Wasserstein GANs with Gradient Penalty to generate images to balance  the WM-811K silicon wafer map dataset. Being able to generate synthetic data will aid in training image detection models later on to improve fabrication efficacy.",
+      "framework": "Pytorch",
+      "date_start": "Oct 2024",
+      "date_end": "Present",
+      "repo": "https://github.com/davidguo123456/wafer-defect-gan",
+      "paper": ""
+    },
+    {
+      "key": 0,
+      "title": "Music Generation Using Autoencoders and Transformer Mixture Distribution Models",
+      "image": "https://davidguo123456.github.io/p2.png",
+      "description": "In this project, we developed a model for music generation using autoencoders and transformer mixture distribution models, implemented in TensorFlow. Building on techniques like variational autoencoders (VAEs) and transformers, our approach processes high-dimensional music data to create coherent compositions. By using a sliding window method and training the model on both diverse and classical music datasets, we aimed to capture melodic patterns effectively. While the model performs well at learning tonality, there are still challenges with rhythm and long-term structure. We're continuing to explore ways to enhance the model’s rhythmic coherence and overall musicality.",
+      "framework": "Tensorflow",
+      "date_start": "Jan 2024",
+      "date_end": "May 2024",
+      "repo": "https://github.com/davidguo123456/vae-tmdn-music",
+      "paper": "https://davidguo123456.github.io/Music_Generation_Using_Autoencoders_and_Transformer_Mixture_Distribution_Models.pdf"
+    }
+  ]
+}

@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useDisclosure } from '@mantine/hooks';
-import { Avatar, Anchor, Flex, Burger, Container, Group } from '@mantine/core';
+import { Avatar, Anchor, Flex, Burger, Container, Group, Menu } from '@mantine/core';
 import pfp from '../../public/pfp.jpg'
 import classes from './Header.module.css';
 
 const links = [
-    { link: '/about', label: 'About Me' },
-    { link: '/contact', label: 'Contact' },
+    { link: '#about-me', label: 'About Me' },
+    { link: '#projects', label: 'Projects' },
+    { link: '#contact', label: 'Contact' },
 
 ];
 
@@ -21,7 +22,7 @@ export function Header() {
             className={classes.link}
             data-active={active === link.link || undefined}
             onClick={(event) => {
-                event.preventDefault();
+                if (opened) toggle()
                 setActive(link.link);
             }}
         >
@@ -54,7 +55,15 @@ export function Header() {
                 <Group gap={5} visibleFrom="xs">
                     {items}
                 </Group>
-                <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+                <Menu opened={opened} shadow="md">
+                    <Menu.Target>
+                        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+                    </Menu.Target>
+                    <Menu.Dropdown>
+                        {items}
+                    </Menu.Dropdown>
+                </Menu>
+
             </Container>
         </header>
     );
