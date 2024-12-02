@@ -1,5 +1,5 @@
 import { IconBrandGithubFilled, IconBrandLinkedin, IconFileCv } from '@tabler/icons-react';
-import { ActionIcon, SimpleGrid, Text, Title, Container, Group} from '@mantine/core';
+import { ActionIcon, SimpleGrid, Title, Container, Group} from '@mantine/core';
 import { ContactIconsList } from './ContactIcons';
 import classes from './Contact.module.css';
 import { LINKS } from '@/app/constants';
