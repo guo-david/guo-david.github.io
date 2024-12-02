@@ -21,7 +21,7 @@ export function Header() {
             href={link.link}
             className={classes.link}
             data-active={active === link.link || undefined}
-            onClick={(event) => {
+            onClick={() => {
                 if (opened) toggle()
                 setActive(link.link);
             }}

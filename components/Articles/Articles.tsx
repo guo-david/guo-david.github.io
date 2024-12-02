@@ -16,7 +16,6 @@ import projects from '../../public/projects.json';
 import classes from './Articles.module.css';
 
 export function ArticlesCardsGrid() {
-  const theme = useMantineTheme();
   const cards = projects.data.map((article) => ArticleCard(article));
 
   return (
@@ -32,7 +31,7 @@ export function ArticleCard(article: any) {
   return (
     <Card key={article.key} radius="md" className={classes.card}>
       <Card.Section>
-        <a href={article.repo} target="_blank" style={{ color: 'grey' }}>
+        <a href={article.repo} target="_blank" rel="noreferrer" style={{ color: 'grey' }}>
           <Image src={article.image} height={360} />
           <div className={classes.imageGrad} />
         </a>
@@ -57,14 +56,14 @@ export function ArticleCard(article: any) {
         <Group gap="xs">
           {article.paper !== '' && (
             <ActionIcon size="lg" color="gray" variant="subtle">
-              <a href={article.paper} target="_blank" style={{ color: 'grey' }}>
+              <a href={article.paper} target="_blank" rel="noreferrer" style={{ color: 'grey' }}>
                 <IconFileTypePdf size={18} stroke={1.5} />
               </a>
             </ActionIcon>
           )}
 
           <ActionIcon size="lg" color="gray" variant="subtle">
-            <a href={article.repo} target="_blank" style={{ color: 'grey' }}>
+            <a href={article.repo} target="_blank" rel="noreferrer" style={{ color: 'grey' }}>
               <IconBrandGithubFilled size={18} stroke={1.5} />
             </a>
           </ActionIcon>

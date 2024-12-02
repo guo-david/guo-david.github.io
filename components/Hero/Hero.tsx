@@ -34,7 +34,7 @@ export function Hero() {
             <Button
               component="a"
               href="https://www.linkedin.com/in/david-guo-1994221b7/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
               className={classes.listButton}
               variant="default"
             >
@@ -51,7 +51,7 @@ export function Hero() {
             <Button
               component="a"
               href="https://github.com/davidguo123456"
-              target="_blank"
+              target="_blank" rel="noreferrer"
               className={classes.listButton}
               variant="default"
             >
@@ -68,7 +68,7 @@ export function Hero() {
             <Button
               component="a"
               href="https://davidguo123456.github.io/CV-David-Guo.pdf"
-              target="_blank"
+              target="_blank" rel="noreferrer"
               className={classes.listButton}
               variant="default"
             >

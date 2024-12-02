@@ -14,17 +14,17 @@ export function Footer() {
 
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
                     <ActionIcon size="lg" color="gray" variant="subtle">
-                        <a href='mailto:davidmy.guo@mail.utoronto.ca' target="_blank" style={{color:"grey"}}>
+                        <a href='mailto:davidmy.guo@mail.utoronto.ca' target="_blank" rel="noreferrer" style={{color:"grey"}}>
                             <IconMailFilled size={18} stroke={1.5} />
                         </a>
                     </ActionIcon>
                     <ActionIcon size="lg" color="gray" variant="subtle">
-                        <a href='https://www.linkedin.com/in/david-guo-1994221b7/' target="_blank" style={{color:"grey"}}>
+                        <a href='https://www.linkedin.com/in/david-guo-1994221b7/' target="_blank" rel="noreferrer" style={{color:"grey"}}>
                             <IconBrandLinkedinFilled size={18} stroke={1.5} />
                         </a>
                     </ActionIcon>
                     <ActionIcon size="lg" color="gray" variant="subtle">
-                        <a href='https://github.com/davidguo123456' target="_blank" style={{color:"grey"}}>
+                        <a href='https://github.com/davidguo123456' target="_blank" rel="noreferrer" style={{color:"grey"}}>
                             <IconBrandGithubFilled size={18} stroke={1.5} />
                         </a>
                     </ActionIcon>
