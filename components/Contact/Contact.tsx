@@ -7,12 +7,6 @@ import { LINKS } from '@/app/constants';
 const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
 
 export function ContactUs() {
-  const icons = social.map((Icon, index) => (
-    <ActionIcon key={index} size={28} className={classes.social} variant="transparent">
-      <Icon size={22} stroke={2} />
-    </ActionIcon>
-  ));
-
   return (
     <Container py="xl">
       <div className={classes.wrapper} id="contact">

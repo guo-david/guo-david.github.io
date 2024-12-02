@@ -43,12 +43,14 @@ export function Header() {
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
-        <Menu opened={opened} shadow="md">
-          <Menu.Target>
-            <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
-          </Menu.Target>
-          <Menu.Dropdown>{items}</Menu.Dropdown>
-        </Menu>
+        <div style={{ zIndex: '9999' }}>
+          <Menu opened={opened} shadow="md">
+            <Menu.Target>
+              <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+            </Menu.Target>
+            <Menu.Dropdown>{items}</Menu.Dropdown>
+          </Menu>
+        </div>
       </Container>
     </header>
   );

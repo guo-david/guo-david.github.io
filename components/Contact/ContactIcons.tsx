@@ -1,5 +1,5 @@
+import { IconAt, IconMapPin, IconPhone } from '@tabler/icons-react';
 import { Box, Stack, Text } from '@mantine/core';
-import { IconAt, IconPhone, IconMapPin } from '@tabler/icons-react';
 import contactInfo from '../../public/contact.json';
 import classes from './ContactIcons.module.css';
 
@@ -34,14 +34,11 @@ export function ContactIconsList() {
     <Stack>
       {contactInfo.data.map(({ icon, title, description }, index) => {
         const IconComponent = iconMap[icon as keyof typeof iconMap];
-        if (!IconComponent) return null;
+        if (!IconComponent) {
+          return null;
+        }
         return (
-          <ContactIcon
-            key={index}
-            icon={IconComponent}
-            title={title}
-            description={description}
-          />
+          <ContactIcon key={index} icon={IconComponent} title={title} description={description} />
         );
       })}
     </Stack>
