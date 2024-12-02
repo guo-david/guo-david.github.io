@@ -15,7 +15,7 @@
   top: -20px;
   height: 20px;
   background: transparent;
-  background: linear-gradient(180deg, transparent 0%, var(--mantine-color-gray-1)100%);
+  background: linear-gradient(180deg, transparent 0%, light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5))100%);
 }
 
 .header {
@@ -26,7 +26,6 @@
 
 .articleGrid {
   margin-bottom: 5px;
-  background: var(--mantine-color-white);
 }
 
 .svgContainer {

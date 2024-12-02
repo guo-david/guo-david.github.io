@@ -4,8 +4,6 @@ import { ContactIconsList } from './ContactIcons';
 import classes from './Contact.module.css';
 import { LINKS } from '@/app/constants';
 
-const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
-
 export function ContactUs() {
   return (
     <Container py="xl">
