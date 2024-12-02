@@ -77,9 +77,8 @@ export function ArticlesHeader() {
     <div>
       <div className={classes.svgContainer}>
         <svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet">
-          <path
+          <path className={classes.svg}
             d="M0,15 C150,30 350,0 500,15 L500,00 L0,0 Z"
-            style={{ stroke: 'none', fill: '#f1f3f5' }}
           />
         </svg>
       </div>

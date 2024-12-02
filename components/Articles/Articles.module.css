@@ -9,6 +9,10 @@
     box-shadow: var(--mantine-shadow-lg);
   }
 }
+.svg { 
+  stroke: 'none';
+  fill:  light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5))
+  }
 
 .imageGrad {
   position: relative;
@@ -21,7 +25,7 @@
 .header {
   height: 150px;
   margin-bottom: 10px;
-  background: linear-gradient(180deg, light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5)) 40%, var(--mantine-color-white) 100%);
+  background: linear-gradient(180deg, light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5)) 40%, transparent 100%);
 }
 
 .articleGrid {
