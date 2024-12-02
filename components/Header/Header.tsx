@@ -20,7 +20,12 @@ export function Header() {
       href={link.link}
       className={classes.link}
       data-active={active === link.link || undefined}
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault(); // Prevent the default jump behavior
+        const targetElement = document.querySelector(link.link);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
         if (opened) {
           toggle();
         }
@@ -40,16 +45,18 @@ export function Header() {
             David Guo
           </Anchor>
         </Flex>
-        <Group gap={5} visibleFrom="xs">
-          {items}
-        </Group>
-        <div style={{ zIndex: '9999' }}>
-          <Menu opened={opened} shadow="md">
-            <Menu.Target>
-              <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
-            </Menu.Target>
-            <Menu.Dropdown>{items}</Menu.Dropdown>
-          </Menu>
+        <div>
+          <Group gap={5} visibleFrom="xs">
+            {items}
+          </Group>
+          <div style={{ zIndex: '9999' }}>
+            <Menu opened={opened} shadow="md">
+              <Menu.Target>
+                <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+              </Menu.Target>
+              <Menu.Dropdown>{items}</Menu.Dropdown>
+            </Menu>
+          </div>
         </div>
       </Container>
     </header>

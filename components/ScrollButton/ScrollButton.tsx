@@ -7,11 +7,22 @@ interface ScrollButtonProps {
 }
 
 export function ScrollButton({ next }: ScrollButtonProps) {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(next);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <Group justify='center' style={{marginBottom: "280px"}}>
+    <Group justify="center">
       <ActionIcon size="50px" radius="25px" variant="subtle">
-        {/* Improved usage of anchor */}
-        <a href={next} style={{ color: 'grey', display: 'block', textDecoration: 'none' }}>
+        <a
+          href={next}
+          onClick={handleScroll}
+          style={{ color: 'grey', display: 'block', textDecoration: 'none' }}
+        >
           <IconArrowDownDashed size={45} stroke={2} color="gray" />
         </a>
       </ActionIcon>

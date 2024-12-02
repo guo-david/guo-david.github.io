@@ -6,8 +6,8 @@ import { LINKS } from '@/app/constants';
 
 export function ContactUs() {
   return (
-    <Container py="xl">
-      <div className={classes.wrapper} id="contact">
+    <Container py="md" className={classes.wrapper} id="contact">
+      <div className={classes.info}>
         <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
           <div>
             <Title className={classes.title}>Contact Me</Title>

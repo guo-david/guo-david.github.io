@@ -1,9 +1,15 @@
+.wrapper {
+  scroll-margin-top: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 84px);
+}
+
 .inner {
-  scroll-margin-top: 300px;
   display: flex;
   justify-content: space-between;
   padding-top: 0;
-  padding-bottom: calc(var(--mantine-spacing-xl) * 4);
 }
 
 .content {

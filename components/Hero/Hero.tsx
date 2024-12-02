@@ -1,12 +1,13 @@
 import { IconBrandGithubFilled, IconBrandLinkedinFilled, IconFileCv } from '@tabler/icons-react';
 import { Button, Container, Group, List, Text, ThemeIcon, Title } from '@mantine/core';
-import classes from './Hero.module.css';
 import { LINKS } from '@/app/constants';
+import { ScrollButton } from '@/components/ScrollButton/ScrollButton';
+import classes from './Hero.module.css';
 
 export function Hero() {
   return (
-    <Container size="md">
-      <div className={classes.inner} id="about-me">
+    <Container size="md" className={classes.wrapper} id="about-me">
+      <div className={classes.inner} >
         <div className={classes.content}>
           <Title className={classes.title}>
             <Group>
@@ -110,6 +111,8 @@ export function Hero() {
           </Group>
         </div>
       </div>
+
+      <ScrollButton next="#projects" />
     </Container>
   );
 }

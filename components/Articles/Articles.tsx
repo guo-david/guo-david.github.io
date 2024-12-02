@@ -12,17 +12,21 @@ import {
   Title,
 } from '@mantine/core';
 import projects from '../../public/projects.json';
+import { ScrollButton } from '../ScrollButton/ScrollButton';
 import classes from './Articles.module.css';
 
 export function ArticlesCardsGrid() {
   const cards = projects.data.map((article) => ArticleCard(article));
 
   return (
-    <Container py="xl">
-      <div className={classes.articleGrid}>
-        <SimpleGrid cols={{ base: 1, sm: 2 }}>{cards}</SimpleGrid>
-      </div>
-    </Container>
+      <Stack gap="xl" className={classes.wrapper}>
+        <Container py="md">
+          <div className={classes.articleGrid}>
+            <SimpleGrid cols={{ base: 1, sm: 2 }}>{cards}</SimpleGrid>
+          </div>
+        </Container>
+        <ScrollButton next="#contact" />
+      </Stack>
   );
 }
 
@@ -77,9 +81,7 @@ export function ArticlesHeader() {
     <div>
       <div className={classes.svgContainer}>
         <svg viewBox="0 0 500 50" preserveAspectRatio="xMinYMin meet">
-          <path className={classes.svg}
-            d="M0,15 C150,30 350,0 500,15 L500,00 L0,0 Z"
-          />
+          <path className={classes.svg} d="M0,15 C150,30 350,0 500,15 L500,00 L0,0 Z" />
         </svg>
       </div>
       <header className={classes.header}>
