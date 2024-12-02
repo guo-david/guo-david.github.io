@@ -23,7 +23,7 @@ export function Hero() {
             </Group>
           </Title>
           <Text c="dark-grey" mt="md">
-            I'm a undergraduate student studying Machine Learning at the University of Toronto.
+            I'm an undergraduate student studying Machine Learning at the University of Toronto.
             <br />
             My experience is primarily with neural network models and generative AI using Python.
             <br />I also dabble with frontend frameworks ocassionally! Mainly React, Vue, and
