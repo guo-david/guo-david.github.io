@@ -5,7 +5,7 @@
       "key": 1,
       "title": "Augmentation of WM811K Silicon Wafer Map Dataset for Error Pattern Detection Training",
       "image": "https://davidguo123456.github.io/p1.png",
-      "description": "In this on-going project, I am investigating the efficacy of using Wasserstein GANs with Gradient Penalty to generate images to balance  the WM-811K silicon wafer map dataset. Being able to generate synthetic data will aid in training image detection models later on to improve fabrication efficacy.",
+      "description": "In this on-going project, I am investigating the efficacy of using Wasserstein GANs with Gradient Penalty to generate images to balance  the WM-811K silicon wafer map dataset. Being able to generate synthetic data will aid in training image detection models later on to improve fabrication efficacy. Preliminary results show improvement for problem classes.",
       "framework": "Pytorch",
       "date_start": "Oct 2024",
       "date_end": "Present",
