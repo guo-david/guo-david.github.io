@@ -35,7 +35,7 @@ export function ArticleCard(article: any) {
     <Card key={article.key} radius="md" className={classes.card}>
       <Card.Section>
         <a href={article.repo} target="_blank" rel="noreferrer" style={{ color: 'grey' }}>
-          <Image src={article.image} height={360} />
+          <Image src={article.image} height={280} />
           <div className={classes.imageGrad} />
         </a>
       </Card.Section>
