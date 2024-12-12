@@ -2,6 +2,17 @@
   "name": "projects",
   "data": [
     {
+      "key": 2,
+      "title": "Multi-task Pancrease Cancer Segmentation and Classification with nnUNetV2",
+      "image": "https://davidguo123456.github.io/p2.png",
+      "description": "This project implements multi-task learning to add a classifier head to nnUNetv2's Residual Encoder preset. This classifier is used to augment nnUNetv2's existing segmentation, specifically in the context of lesion subtypes in pancreatic cancers.",
+      "framework": "Pytorch",
+      "date_start": "Nov 2024",
+      "date_end": "Present",
+      "repo": "https://github.com/davidguo123456/pancreas-cancer-segmentation",
+      "paper": ""
+    },
+    {
       "key": 1,
       "title": "Augmentation of WM811K Silicon Wafer Map Dataset for Error Pattern Detection Training",
       "image": "https://davidguo123456.github.io/p1.png",
@@ -15,7 +26,7 @@
     {
       "key": 0,
       "title": "Music Generation Using Autoencoders and Transformer Mixture Distribution Models",
-      "image": "https://davidguo123456.github.io/p2.png",
+      "image": "https://davidguo123456.github.io/p0.png",
       "description": "In this project, we developed a model for music generation using autoencoders and transformer mixture distribution models, implemented in TensorFlow. Building on techniques like variational autoencoders (VAEs) and transformers, our approach processes high-dimensional music data to create coherent compositions. By using a sliding window method and training the model on both diverse and classical music datasets, we aimed to capture melodic patterns effectively. While the model performs well at learning tonality, there are still challenges with rhythm and long-term structure. We're continuing to explore ways to enhance the model’s rhythmic coherence and overall musicality.",
       "framework": "Tensorflow",
       "date_start": "Jan 2024",
