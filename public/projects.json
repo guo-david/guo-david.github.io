@@ -7,8 +7,8 @@
       "image": "https://davidguo123456.github.io/p2.png",
       "description": "This project implements multi-task learning to add a classifier head to nnUNetv2's Residual Encoder preset. This classifier is used to augment nnUNetv2's existing segmentation, specifically in the context of lesion subtypes in pancreatic cancers.",
       "framework": "Pytorch",
-      "date_start": "Nov 2024",
-      "date_end": "Present",
+      "date_start": "Dec 2024",
+      "date_end": "Feb 2025",
       "repo": "https://github.com/davidguo123456/pancreas-cancer-segmentation",
       "paper": "https://davidguo123456.github.io/Multi_task_Pancreas_Cancer_Segmentation_and_Classification_with_nnUNetV2.pdf"
     },
@@ -19,7 +19,7 @@
       "description": "In this on-going project, I am investigating the efficacy of using Wasserstein GANs with Gradient Penalty to generate images to balance  the WM-811K silicon wafer map dataset. Being able to generate synthetic data will aid in training image detection models later on to improve fabrication efficacy. Preliminary results show improvement for problem classes.",
       "framework": "Pytorch",
       "date_start": "Oct 2024",
-      "date_end": "Present",
+      "date_end": "Dec 2024",
       "repo": "https://github.com/davidguo123456/wafer-defect-gan",
       "paper": ""
     },
