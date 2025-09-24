@@ -1,6 +1,15 @@
 {
   "name": "projects",
   "data": [
+  {
+    "key": 3,
+    "title": "Multi-modal Conversational Recommendation",
+    "image": "https://davidguo123456.github.io/p3.png",
+    "description": "Built a dataset and analysis pipeline for conversational recommendation with visual grounding. Ran a 60+ dialogue user study, annotated intents, and developed metrics and visualizations to evaluate alignment between Seeker preferences and Assistant predictions.",
+    "framework": "Python (Pandas, scikit-learn, Matplotlib)",
+    "date_start": "May 2024",
+    "date_end": "Current",
+  }
     {
       "key": 2,
       "title": "Multi-task Pancreas Cancer Segmentation and Classification with nnUNetV2",
