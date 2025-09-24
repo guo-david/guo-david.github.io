@@ -23,13 +23,13 @@ export function Hero() {
               <br />
             </Group>
           </Title>
-          <Text c="dark-grey" mt="md">
-            I'm an undergraduate student studying Machine Learning at the University of Toronto.
-            <br />
-            My experience is primarily with neural network models and generative AI using Python.
-            <br />I also dabble with frontend frameworks ocassionally! Mainly React, Vue, and
-            Next.js.
-          </Text>
+            <Text c="dark-grey" mt="md">
+              I'm an undergraduate student in Engineering Science (Machine Intelligence) at the University of Toronto.  
+              <br />
+              My research experience spans machine learning and data science, with a focus on multimodal dialogue systems, medical image analysis, and generative models.  
+              <br />
+              I also have practical experience with large-scale datasets, experimental design, and visualization pipelines, and occasionally work with frontend frameworks such as React, Vue, and Next.js to support research tools and interfaces.
+            </Text>
 
           <List className={classes.list} mt={30} spacing="sm" size="md">
             <Button
