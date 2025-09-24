@@ -64,12 +64,13 @@ export function ArticleCard(article: any) {
               </a>
             </ActionIcon>
           )}
-
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <a href={article.repo} target="_blank" rel="noreferrer" style={{ color: 'grey' }}>
-              <IconBrandGithubFilled size={18} stroke={2} />
-            </a>
-          </ActionIcon>
+           {article.repo !== '' && (
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <a href={article.repo} target="_blank" rel="noreferrer" style={{ color: 'grey' }}>
+                <IconBrandGithubFilled size={18} stroke={2} />
+              </a>
+            </ActionIcon>
+          )}
         </Group>
       </Group>
     </Card>
