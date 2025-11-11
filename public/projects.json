@@ -3,15 +3,15 @@
   "data": [
     {
       "key": 3,
-      "title": "Multi-modal Conversational Recommendation",
+      "title": "Spinal Geometry Modeling for Metastasis Assessment",
       "image": "https://guo-david.github.io/p3.PNG",
-      "description": "Built a dataset and analysis pipeline for conversational recommendation with visual grounding. Ran a 60+ dialogue user study, annotated intents, and developed metrics and visualizations to evaluate alignment between Seeker preferences and Assistant predictions.",
+      "description": "Modeled healthy spinal geometry with a bi-directional quantile regression framework (XGBoost) that predicts normative vertebral volume and inter-centroid distances from demographic and biomarker features. Built a population Statistical Shape Model via Generalized Procrustes Analysis to capture vertebral shape variance, then integrated both modules into a Python library and dashboard for clinician-facing assessment of metastasis-related deformities.",
       "framework": "Python",
-      "skills": ["Pandas", "scikit-learn", "Matplotlib"],
-      "date_start": "May 2024",
-      "date_end": "Current",
-      "repo": "https://anonymous.4open.science/r/vogue-EF02/README.md",
-      "paper": "https://arxiv.org/pdf/2510.21151"
+      "skills": ["XGBoost", "Quantile Regression", "Statistical Shape Modeling"],
+      "date_start": "Sep 2025",
+      "date_end": "Present",
+      "repo": "",
+      "paper": ""
     },
     {
       "key": 2,
