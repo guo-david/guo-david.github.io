@@ -11,6 +11,9 @@
   transition:
     transform 150ms ease,
     box-shadow 150ms ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &:hover {
     transform: scale(1.01);
@@ -121,4 +124,22 @@
   padding-left: 10px;
   justify-content: flex-start;
 
+}
+
+.footer {
+  margin-top: auto;
+  align-items: flex-start;
+}
+
+.techBadges {
+  flex-wrap: wrap;
+  margin-top: var(--mantine-spacing-sm);
+}
+
+.rating {
+  align-self: flex-start;
+}
+
+.modalBody {
+  padding-top: var(--mantine-spacing-xs);
 }

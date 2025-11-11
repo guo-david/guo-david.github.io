@@ -71,3 +71,15 @@
   justify-content: flex-start;
 
 }
+
+.pfp {
+  border-radius: 50px;
+  /* circular */
+  object-fit: cover;
+  /* optional subtle ring/shadow */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+}
+
+.scrollButton {
+  margin-top: var(--mantine-spacing-xl);
+}
