@@ -1,7 +1,8 @@
 import { MouseEvent, useState } from 'react';
-import { Anchor, Avatar, Burger, Container, Flex, Group, Menu } from '@mantine/core';
+import { Anchor, Burger, Container, Flex, Group, Menu } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import pfp from '../../public/pfp.jpg';
+import NextImage from 'next/image';
 import classes from './Header.module.css';
 
 const links = [
@@ -43,7 +44,16 @@ export function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <Flex direction="row" gap="md" align="center">
-          <Avatar radius="xl" size="lg" src={pfp.src} />
+          <div className={classes.avatarWrapper}>
+            <NextImage
+              src={pfp}
+              alt="David Guo"
+              fill
+              sizes="48px"
+              priority
+              className={classes.avatarImage}
+            />
+          </div>
           <Anchor href="" size="lg" variant="gradient" fw={900}>
             David Guo
           </Anchor>
