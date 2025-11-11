@@ -44,6 +44,17 @@
   width: 100%;
 }
 
+.cardStack {
+  align-items: stretch;
+}
+
+.scrollButtonWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+}
+
 .title {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-family:
@@ -66,7 +77,6 @@
   gap: var(--mantine-spacing-xs);
   padding: var(--mantine-spacing-md);
   background-color: var(--mantine-color-body);
-  max-width: 720px;
   width: 100%;
 }
 

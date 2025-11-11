@@ -7,8 +7,7 @@ interface ScrollButtonProps {
 }
 
 export function ScrollButton({ next }: ScrollButtonProps) {
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
+  const handleScroll = () => {
     const targetElement = document.querySelector(next);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -16,15 +15,15 @@ export function ScrollButton({ next }: ScrollButtonProps) {
   };
 
   return (
-    <Group justify="center">
-      <ActionIcon size="50px" radius="25px" variant="subtle">
-        <a
-          href={next}
-          onClick={handleScroll}
-          style={{ color: 'grey', display: 'block', textDecoration: 'none' }}
-        >
-          <IconArrowDownDashed size={45} stroke={2} color="gray" />
-        </a>
+    <Group justify="center" style={{ position: 'relative', zIndex: 5 }}>
+      <ActionIcon
+        size="50px"
+        radius="25px"
+        variant="subtle"
+        aria-label="Scroll to next section"
+        onClick={handleScroll}
+      >
+        <IconArrowDownDashed size={45} stroke={2} color="gray" />
       </ActionIcon>
     </Group>
   );

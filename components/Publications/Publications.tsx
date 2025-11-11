@@ -67,13 +67,15 @@ export function PublicationsSection() {
 
       <div className={classes.sectionContent}>
         <Container size="md" py="xl" className={classes.cardContainer}>
-          <Stack gap="md">
+          <Stack gap="md" className={classes.cardStack}>
             {publications.data.map((publication) => (
               <PublicationCard key={publication.key} publication={publication} />
             ))}
           </Stack>
         </Container>
-        <ScrollButton next="#projects" />
+        <div className={classes.scrollButtonWrapper}>
+          <ScrollButton next="#projects" />
+        </div>
       </div>
     </section>
   );
