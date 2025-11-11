@@ -6,11 +6,12 @@
       "title": "Multi-modal Conversational Recommendation",
       "image": "https://guo-david.github.io/p3.PNG",
       "description": "Built a dataset and analysis pipeline for conversational recommendation with visual grounding. Ran a 60+ dialogue user study, annotated intents, and developed metrics and visualizations to evaluate alignment between Seeker preferences and Assistant predictions.",
-      "framework": "Python (Pandas, scikit-learn, Matplotlib)",
+      "framework": "Python",
+      "skills": ["Pandas", "scikit-learn", "Matplotlib"],
       "date_start": "May 2024",
       "date_end": "Current",
-      "repo": "",
-      "paper": ""
+      "repo": "https://anonymous.4open.science/r/vogue-EF02/README.md",
+      "paper": "https://arxiv.org/pdf/2510.21151"
     },
     {
       "key": 2,
@@ -18,10 +19,11 @@
       "image": "https://guo-david.github.io/p2.png",
       "description": "This project implements multi-task learning to add a classifier head to nnUNetv2's Residual Encoder preset. This classifier is used to augment nnUNetv2's existing segmentation, specifically in the context of lesion subtypes in pancreatic cancers.",
       "framework": "Pytorch",
+      "skills": ["nnUNetv2", "Multi-task Learning", "Medical Imaging"],
       "date_start": "Dec 2024",
       "date_end": "Feb 2025",
-      "repo": "https://github.com/davidguo123456/pancreas-cancer-segmentation",
-      "paper": "https://davidguo123456.github.io/Multi_task_Pancreas_Cancer_Segmentation_and_Classification_with_nnUNetV2.pdf"
+      "repo": "https://github.com/guo-david/pancreas-cancer-segmentation",
+      "paper": "https://guo-david.github.io/Multi_task_Pancreas_Cancer_Segmentation_and_Classification_with_nnUNetV2.pdf"
     },
     {
       "key": 1,
@@ -29,9 +31,10 @@
       "image": "https://guo-david.github.io/p1.png",
       "description": "In this on-going project, I am investigating the efficacy of using Wasserstein GANs with Gradient Penalty to generate images to balance  the WM-811K silicon wafer map dataset. Being able to generate synthetic data will aid in training image detection models later on to improve fabrication efficacy. Preliminary results show improvement for problem classes.",
       "framework": "Pytorch",
+      "skills": ["Wasserstein GAN", "Gradient Penalty", "Data Augmentation"],
       "date_start": "Oct 2024",
       "date_end": "Dec 2024",
-      "repo": "https://github.com/davidguo123456/wafer-defect-gan",
+      "repo": "https://github.com/guo-david/wafer-defect-gan",
       "paper": ""
     },
     {
@@ -40,10 +43,11 @@
       "image": "https://guo-david.github.io/p0.png",
       "description": "In this project, we developed a model for music generation using autoencoders and transformer mixture distribution models, implemented in TensorFlow. Building on techniques like variational autoencoders (VAEs) and transformers, our approach processes high-dimensional music data to create coherent compositions. By using a sliding window method and training the model on both diverse and classical music datasets, we aimed to capture melodic patterns effectively. While the model performs well at learning tonality, there are still challenges with rhythm and long-term structure. We're continuing to explore ways to enhance the model’s rhythmic coherence and overall musicality.",
       "framework": "Tensorflow",
+      "skills": ["Autoencoders", "Transformers", "VAEs", "Music Modeling"],
       "date_start": "Jan 2024",
       "date_end": "May 2024",
-      "repo": "https://github.com/davidguo123456/vae-tmdn-music",
-      "paper": "https://davidguo123456.github.io/Music_Generation_Using_Autoencoders_and_Transformer_Mixture_Distribution_Models.pdf"
+      "repo": "https://github.com/guo-david/vae-tmdn-music",
+      "paper": "https://guo-david.github.io/Music_Generation_Using_Autoencoders_and_Transformer_Mixture_Distribution_Models.pdf"
     }
   ]
 }

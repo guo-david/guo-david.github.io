@@ -78,6 +78,11 @@
   object-fit: cover;
   /* optional subtle ring/shadow */
   box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+  background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-6));
+
+  @media (max-width: $mantine-breakpoint-md) {
+    display: none;
+  }
 }
 
 .scrollButton {

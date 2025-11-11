@@ -36,9 +36,12 @@
 .sectionContent {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: var(--mantine-spacing-xl);
   margin-bottom: var(--mantine-spacing-xl);
+}
+
+.cardContainer {
+  width: 100%;
 }
 
 .title {
@@ -63,10 +66,14 @@
   gap: var(--mantine-spacing-xs);
   padding: var(--mantine-spacing-md);
   background-color: var(--mantine-color-body);
+  max-width: 720px;
+  width: 100%;
 }
 
 .cardTitle {
   line-height: 1.3;
+  text-decoration: none;
+  color: inherit;
 }
 
 .status {

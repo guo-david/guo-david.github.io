@@ -5,12 +5,10 @@ import { Button, Container, Group, List, Text, ThemeIcon, Title } from "@mantine
 import { LINKS } from "@/app/constants";
 import { ScrollButton } from "@/components/ScrollButton/ScrollButton";
 import classes from "./Hero.module.css";
-import me from "@/public/me.png";            // ✅ cleaner alias (optional)
+import me from "@/public/me.png";
 import NextImage from "next/image";
-import { useMediaQuery } from "@mantine/hooks";
 
 export function Hero() {
-  const isDesktop = useMediaQuery("(min-width: 48em)"); // ✅ inside component
   return (
     <Container size="md" className={classes.wrapper} id="about-me">
       <div className={classes.inner}>
@@ -77,27 +75,26 @@ export function Hero() {
           </List>
 
           <Group mt={30}>
-            <Button component="a" href="#projects" radius="xl" size="md" className={classes.control}>
-              My projects
-            </Button>
             <Button component="a" href="#publications" radius="xl" size="md" className={classes.control}>
               Publications
+            </Button>
+            <Button component="a" href="#projects" radius="xl" size="md" className={classes.control}>
+              Projects
             </Button>
             <Button component="a" href="#contact" variant="default" radius="xl" size="md" className={classes.control}>
               Contact Me
             </Button>
           </Group>
         </div>
-        {isDesktop &&
-          <NextImage
-            className={classes.pfp}
-            src={me}
-            alt="David Guo portrait"
-            width={400}
-            height={400}
-            priority
-            unoptimized
-          />}
+        <NextImage
+          className={classes.pfp}
+          src={me}
+          alt="David Guo portrait"
+          width={400}
+          height={400}
+          priority
+          unoptimized
+        />
       </div>
 
       <div className={classes.scrollButton}>

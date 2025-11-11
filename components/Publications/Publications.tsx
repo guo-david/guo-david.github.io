@@ -10,9 +10,14 @@ function PublicationCard({ publication }: { publication: Publication }) {
     <Card withBorder radius="md" className={classes.card}>
       <Group justify="space-between" align="flex-start">
         <Stack gap={4}>
-          <Text fw={600} className={classes.cardTitle}>
+          <Anchor
+            href={publication.link}
+            target="_blank"
+            rel="noreferrer"
+            className={classes.cardTitle}
+          >
             {publication.title}
-          </Text>
+          </Anchor>
           <Text size="sm" c="dimmed">
             {publication.authors}
           </Text>
@@ -33,12 +38,6 @@ function PublicationCard({ publication }: { publication: Publication }) {
       <Text size="sm" c="dimmed">
         {publication.description}
       </Text>
-
-      <Group justify="flex-end">
-        <Anchor href={publication.link} target="_blank" rel="noreferrer" size="sm">
-          View publication
-        </Anchor>
-      </Group>
     </Card>
   );
 }
@@ -67,8 +66,8 @@ export function PublicationsSection() {
       </div>
 
       <div className={classes.sectionContent}>
-        <Container size="md" py="xl">
-          <Stack gap="md" className={classes.cardStack}>
+        <Container size="md" py="xl" className={classes.cardContainer}>
+          <Stack gap="md">
             {publications.data.map((publication) => (
               <PublicationCard key={publication.key} publication={publication} />
             ))}

@@ -143,3 +143,15 @@
 .modalBody {
   padding-top: var(--mantine-spacing-xs);
 }
+
+.modalContent {
+  position: relative;
+}
+
+.modalClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  box-shadow: var(--mantine-shadow-md);
+}
