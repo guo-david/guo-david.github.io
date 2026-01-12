@@ -3,16 +3,6 @@
   "data": [
     {
       "key": 0,
-      "title": "Evaluating Scene-based In-Situ Item Labeling for Immersive Conversational Recommendation",
-      "authors": "Liang, J., Liu, Y., Guo, D., Jiang, Y., Sun, M., & Sanner, S.",
-      "venue": "Submitted to ACL ARR (January 2026)",
-      "year": "2026",
-      "status": "Submitted",
-      "description": "",
-      "link": ""
-    },
-    {
-      "key": 1,
       "title": "VOGUE: A Multimodal Conversational Fashion Recommendation Dataset",
       "authors": "Guo, D.*, Sun, M.*, Jiang, Y.*, Liang, J., & Sanner, S.",
       "venue": "Submitted to ACM WebConf 2026",
