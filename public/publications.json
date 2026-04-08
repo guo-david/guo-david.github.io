@@ -5,11 +5,21 @@
       "key": 0,
       "title": "VOGUE: A Multimodal Conversational Fashion Recommendation Dataset",
       "authors": "Guo, D.*, Sun, M.*, Jiang, Y.*, Liang, J., & Sanner, S.",
-      "venue": "Submitted to ACM WebConf 2026",
-      "year": "2025",
-      "status": "Preprint",
+      "venue": "Accepted to UMAP 2026",
+      "year": "2026",
+      "status": "Accepted",
       "description": "",
       "link": "https://arxiv.org/abs/2510.21151"
+    },
+    {
+      "key": 1,
+      "title": "Evaluating Scene-based In-Situ Item Labeling for Immersive Conversational Recommendation",
+      "authors": "Liang, J.*, Liu, Y. S.*, Guo, D.*, Sun, M., Jiang, Y., & Sanner, S.",
+      "venue": "Findings of ACL 2026",
+      "year": "2026",
+      "status": "Accepted",
+      "description": "",
+      "link": ""
     }
   ]
 }
