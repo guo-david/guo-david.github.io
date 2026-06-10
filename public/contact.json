@@ -1,8 +1,8 @@
 {
   "name":"contact",
   "data": [
-    { "title": "University Email", "description": "davidmy.guo@mail.utoronto.ca", "icon": "IconAt" },
-    { "title": "Personal Email", "description": "davidguo123456@gmail.com", "icon": "IconAt" },
+    { "title": "University Email", "description": "davidmy.guo [at] mail.utoronto.ca", "icon": "IconAt" },
+    { "title": "Personal Email", "description": "davidguo123456 [at] gmail.com", "icon": "IconAt" },
     { "title": "Phone", "description": "(604) 825 9637", "icon": "IconPhone" },
     { "title": "Location", "description": "Toronto, ON", "icon": "IconMapPin" }
   ]
