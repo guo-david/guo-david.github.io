@@ -2,7 +2,7 @@
   "name": "publications",
   "data": [
     {
-      "key": o,
+      "key": 0,
       "title": "Evaluating Scene-based In-Situ Item Labeling for Immersive Conversational Recommendation",
       "authors": "Liang, J.*, Liu, Y. S.*, Guo, D.*, Sun, M., Jiang, Y., & Sanner, S.",
       "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
