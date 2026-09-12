@@ -29,11 +29,11 @@ export function Hero() {
           </Title>
 
           <Text c="dimmed" mt="md">
-            I'm an undergraduate student in Engineering Science (Machine Intelligence) at the University of Toronto.
+            I'm a Master's student at the University of Toronto.
             <br />
-            My research experience spans <b>machine learning</b> and <b>data science</b>, with a focus on <b>multimodal dialogue systems</b>, <b>medical image analysis</b>, and <b>generative models</b>.
+            My research focuses on <b>LLMs</b>, <b>agentic systems</b>, and <b>AR/XR</b>, particularly how intelligent agents can reason across language, vision, memory, and structured physical environments.
             <br />
-            I also have practical experience with <b>large-scale datasets</b>, <b>experimental design</b>, and <b>visualization pipelines</b>, and occasionally work with frontend frameworks such as React, Vue, and Next.js to support research tools and interfaces.
+            I work on multimodal interaction, world models, agent memory, and the systems needed to connect foundation models with real-world environments and interfaces.
           </Text>
 
           <List className={classes.list} mt={30} spacing="sm" size="md">
