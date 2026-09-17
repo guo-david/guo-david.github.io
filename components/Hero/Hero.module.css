@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 84px);
+  min-height: calc(100vh - 84px);
+  padding-block: var(--mantine-spacing-xl);
 }
 
 .inner {

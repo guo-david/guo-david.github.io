@@ -29,11 +29,12 @@ export function Hero() {
           </Title>
 
           <Text c="dimmed" mt="md">
-            I'm a Master's student at the University of Toronto.
-            <br />
-            My research focuses on <b>LLMs</b>, <b>agentic systems</b>, and <b>AR/XR</b>, particularly how intelligent agents can reason across language, vision, memory, and structured physical environments.
-            <br />
-            I work on multimodal interaction, world models, agent memory, and the systems needed to connect foundation models with real-world environments and interfaces.
+            I’m a MASc student in Mechanical and Industrial Engineering at the University of Toronto
+            (2026–2028), supervised by Prof. Scott Sanner. My research is in machine learning and AI: I
+            study how agents connect language with visual observations, maintain memory of users and
+            physical environments, and use that information for grounded, personalized interaction in
+            AR/XR. I completed a BASc in Engineering Science, specializing in Machine Intelligence, at
+            the University of Toronto (2021–2026).
           </Text>
 
           <List className={classes.list} mt={30} spacing="sm" size="md">

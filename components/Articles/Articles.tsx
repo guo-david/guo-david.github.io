@@ -221,8 +221,8 @@ export function ArticlesHeader() {
           <div className={classes.inner}>
             <div className={classes.content} id="projects">
               <Stack>
-                <Title className={classes.title}>Projects</Title>
-                <Text mt="md">A selection of projects I've worked on with public repositories</Text>
+                <Title className={classes.title}>Selected Projects</Title>
+                <Text mt="md">Selected scientific machine learning and engineering work.</Text>
               </Stack>
             </div>
           </div>

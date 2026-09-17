@@ -57,7 +57,7 @@ export function PublicationsSection() {
               <div className={classes.content} id="publications">
                 <Stack>
                   <Title className={classes.title}>Publications</Title>
-                  <Text mt="md">Selected papers and preprints.</Text>
+                  <Text mt="md">Selected publications.</Text>
                 </Stack>
               </div>
             </div>
@@ -72,6 +72,9 @@ export function PublicationsSection() {
               <PublicationCard key={publication.key} publication={publication} />
             ))}
           </Stack>
+          <Text mt="sm" size="xs" c="dimmed">
+            * Equal contribution
+          </Text>
         </Container>
         <div className={classes.scrollButtonWrapper}>
           <ScrollButton next="#projects" />

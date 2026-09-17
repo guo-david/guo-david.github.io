@@ -4,8 +4,8 @@
     {
       "key": 0,
       "title": "Evaluating Scene-based In-Situ Item Labeling for Immersive Conversational Recommendation",
-      "authors": "Liang, J.*, Liu, Y. S.*, Guo, D.*, Sun, M., Jiang, Y., & Sanner, S.",
-      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "authors": "Jiazhou Liang*, Yifan Liu*, David Guo*, Minqing Sun, Yilun Jiang, Scott Sanner",
+      "venue": "Findings of ACL 2026",
       "year": "2026",
       "status": "Accepted",
       "description": "",
@@ -13,9 +13,9 @@
     },
     {
       "key": 1,
-      "title": "VOGUE: A Multimodal Conversational Fashion Recommendation Dataset",
-      "authors": "Guo, D.*, Sun, M.*, Jiang, Y.*, Liang, J., & Sanner, S.",
-      "venue": "Proceedings of the 34th ACM Conference on User Modeling, Adaptation and Personalization",
+      "title": "VOGUE: A Multimodal Dataset for Conversational Recommendation in Fashion",
+      "authors": "David Guo*, Minqing Sun*, Yilun Jiang*, Jiazhou Liang, Scott Sanner",
+      "venue": "ACM UMAP 2026",
       "year": "2026",
       "status": "Accepted",
       "description": "",
