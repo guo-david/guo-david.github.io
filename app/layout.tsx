@@ -1,4 +1,5 @@
 import '@mantine/core/styles.css';
+import './fonts.css';
 
 import React from 'react';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
@@ -15,10 +16,11 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <ColorSchemeScript defaultColorScheme="auto" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=2" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta
           name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+          content="width=device-width, initial-scale=1"
         />
       </head>
       <body>
