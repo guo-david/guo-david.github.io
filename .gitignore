@@ -131,3 +131,6 @@ dist
 .pnp.*
 
 .DS_Store
+
+# Local design studies are kept outside website commits
+/local-studies/

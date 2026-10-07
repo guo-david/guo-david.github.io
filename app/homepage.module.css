@@ -29,7 +29,7 @@
 .links { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 20px; }
 .links a { font-size: 14px; font-weight: 600; text-decoration: none; }
 .portrait { flex: 0 0 200px; align-self: center; }
-.portrait img { display: block; width: 200px; height: 200px; object-fit: cover; border: 1px solid var(--strong-rule); }
+.portrait img { display: block; object-fit: cover; }
 .portraitLabel { display: block; font-family: monospace; font-size: 10px; letter-spacing: 1.2px; margin-top: 8px; color: var(--muted); }
 .section { margin-bottom: 48px; scroll-margin-top: 24px; }
 .sectionHeading { display: flex; align-items: baseline; gap: 15px; padding-bottom: 14px; border-bottom: 2px solid var(--strong-rule); }
@@ -87,7 +87,6 @@
   .bio h1 { font-size: 38px; }
   .bio p.discipline { font-size: 16px; }
   .portrait { align-self: flex-start; flex-basis: auto; }
-  .portrait img { width: 180px; height: 180px; }
   .sectionHeading { gap: 10px; }
   .sectionHeading h2 { font-size: 22px; }
   .paper h3 { font-size: 19px; }
@@ -105,7 +104,6 @@
 .cyber .bio p { font-size:15px; }
 .cyber .bio p.discipline { font-size:16px; }
 .cyber .portrait { width:240px; max-width:100%; flex-basis:auto; align-self:center; }
-.cyber .portrait img { width:165px; height:190px; border-radius:0; }
 .cyber .papers { display:grid; grid-template-columns:minmax(0,1fr); gap:18px; }
 .cyber .paper { border:1px solid var(--rule); padding:20px; background:var(--surface); }
 .cyber .paper h3 { font-size:20px; font-weight:500; line-height:1.4; }
@@ -152,7 +150,7 @@
 .researchTopics { margin: 12px 0 0; padding-left: 20px; font-size: 16px; }
 .researchTopics li + li { margin-top: 6px; }
 
-.portraitFrame { width: 100%; aspect-ratio: 6 / 7; overflow: hidden; border: 1px solid var(--rule); }
+.portraitFrame { position: relative; width: 100%; aspect-ratio: 6 / 7; overflow: hidden; border: 1px solid var(--rule); }
 .cyber .portraitFrame img { border: 0; width: 100%; height: 100%; object-fit: cover; object-position: 48% 50%; transform: scale(1.45); transform-origin: 48% 50%; }
 
 .emailAddress { overflow-wrap: anywhere; }
@@ -164,3 +162,6 @@
   border-color: color-mix(in srgb, var(--accent) 25%, var(--rule));
 }
 .preprint .venue { color: var(--accent); }
+
+.links a, .paperLinks a { display: inline-flex; align-items: center; gap: 4px; }
+.linkIcon { flex-shrink: 0; }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { IconArrowUpRight, IconMoon, IconSun } from "@tabler/icons-react";
 import portrait from "@/public/me.png";
 import { LINKS } from "@/app/constants";
 import publications from "./research-publications.json";
@@ -42,7 +43,7 @@ export default function HomePage() {
             <a href="#publications">Publications</a>
             <a href="#current-research">Current Research</a>
             <a href="#contact">Contact</a>
-            <button type="button" onClick={toggleTheme} className={styles.themeToggle} aria-label={`Switch to ${light ? "dark" : "light"} mode`}><span aria-hidden="true">{light ? "◐" : "☼"}</span><span className={styles.themeLabel}>{light ? "Dark" : "Light"}</span></button>
+            <button type="button" onClick={toggleTheme} className={styles.themeToggle} aria-label={`Switch to ${light ? "dark" : "light"} mode`}>{light ? <IconMoon size={18} aria-hidden="true" focusable="false" /> : <IconSun size={18} aria-hidden="true" focusable="false" />}<span className={styles.themeLabel}>{light ? "Dark" : "Light"}</span></button>
           </nav>
         </header>
         <main id="main">
@@ -54,13 +55,13 @@ export default function HomePage() {
               <p>I’m a MASc student at the University of Toronto, supervised by Prof. Scott Sanner, studying machine learning and human–AI interaction.</p>
               <p>My work spans <strong>conversational recommendation</strong>, <strong>user modeling</strong>, and <strong>memory for AI assistants</strong>.</p>
               <div className={styles.links} aria-label="Professional links">
-                <a href={LINKS.cv}>CV <span aria-hidden="true">↗</span></a>
+                <a href={LINKS.cv}>CV <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
                 <a href="#contact">Email</a>
-                <a href={LINKS.github}>GitHub <span aria-hidden="true">↗</span></a>
-                <a href={LINKS.linkedin}>LinkedIn <span aria-hidden="true">↗</span></a>
+                <a href={LINKS.github}>GitHub <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
+                <a href={LINKS.linkedin}>LinkedIn <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
               </div>
             </div>
-            <div className={styles.portrait}><div className={styles.portraitFrame}><Image src={portrait} alt="David Guo portrait" width={480} height={560} priority /></div><span aria-hidden="true" className={styles.portraitLabel}>TORONTO, ON</span>
+            <div className={styles.portrait}><div className={styles.portraitFrame}><Image src={portrait} alt="David Guo portrait" fill sizes="240px" priority /></div><span aria-hidden="true" className={styles.portraitLabel}>TORONTO, ON</span>
             </div>
           </section>
           <section id="publications" className={styles.section} aria-labelledby="publications-title">
@@ -71,7 +72,7 @@ export default function HomePage() {
                   <p className={styles.venue}>{paper.venue} <span>· {paper.status}</span></p>
                   <h3>{paper.link ? <a href={paper.link}>{paper.title}</a> : paper.title}</h3>
                   <p className={styles.authors}>{paper.authors.split(/(David Guo)/g).map((part, index) => part === "David Guo" ? <strong key={index}>{part}</strong> : part)}</p>
-                  {paper.link && <div className={styles.paperLinks}><a href={paper.link}>Paper <span aria-hidden="true">↗</span></a></div>}
+                  {paper.link && <div className={styles.paperLinks}><a href={paper.link}>Paper <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a></div>}
                 </article>
               ))}
             </div>
