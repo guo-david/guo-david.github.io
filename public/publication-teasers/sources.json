@@ -1,0 +1,53 @@
+[
+  {
+    "name": "spac-mem",
+    "paper": "https://arxiv.org/abs/2610.05526v1",
+    "source": "https://arxiv.org/html/2610.05526v1/teaser-two-scenes.png",
+    "figure": 1,
+    "original": "spac-mem.png",
+    "webp": "spac-mem.webp",
+    "width": 960,
+    "height": 423,
+    "alt": "Spatially grounded conversational memory linking egocentric scenes, dialogue, and persistent objects.",
+    "crop": [
+      0,
+      0,
+      960,
+      423
+    ]
+  },
+  {
+    "name": "immersive-recommendation",
+    "paper": "https://arxiv.org/abs/2604.09698v2",
+    "source": "https://arxiv.org/html/2604.09698v2/plots/fig1_hook.png",
+    "figure": 1,
+    "original": "immersive-recommendation.png",
+    "webp": "immersive-recommendation.webp",
+    "width": 1800,
+    "height": 1149,
+    "alt": "Egocentric shoe-store scene with recommendations highlighted using immersive item labels.",
+    "crop": [
+      36,
+      84,
+      3571,
+      2340
+    ]
+  },
+  {
+    "name": "vogue",
+    "paper": "https://arxiv.org/abs/2510.21151v2",
+    "source": "https://arxiv.org/html/2510.21151v2/vogue_teaser_lucid.png",
+    "figure": 4,
+    "original": "vogue.png",
+    "webp": "vogue.webp",
+    "width": 1800,
+    "height": 494,
+    "alt": "Five stages of a fashion recommendation conversation, from preference elicitation to agreement.",
+    "crop": [
+      15,
+      13,
+      2023,
+      564
+    ]
+  }
+]

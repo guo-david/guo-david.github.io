@@ -165,3 +165,14 @@
 
 .links a, .paperLinks a { display: inline-flex; align-items: center; gap: 4px; }
 .linkIcon { flex-shrink: 0; }
+.paperLinks { display: flex; flex-wrap: wrap; gap: 16px; }
+
+.cyber .paper { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 16px; align-items: center; }
+.compact main .paper { padding: 14px; }
+.paperFigure { display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid var(--rule); border-radius: 3px; overflow: hidden; }
+.paperFigure img { display: block; width: 100%; height: auto; max-height: 180px; object-fit: contain; }
+.paperDetails { min-width: 0; }
+@media (max-width: 640px) {
+  .cyber .paper { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .paperFigure img { max-height: 240px; }
+}

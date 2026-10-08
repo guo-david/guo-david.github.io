@@ -10,29 +10,32 @@
       "status": "Preprint; submitted to ICLR 2027",
       "link": "https://arxiv.org/abs/2610.05526",
       "description": "",
-      "contributionNote": ""
+      "contributionNote": "",
+      "codeLink": ""
     },
     {
       "key": 0,
       "title": "Evaluating Scene-based In-Situ Item Labeling for Immersive Conversational Recommendation",
-      "authors": "Jiazhou Liang*, Yifan Liu*, David Guo*, Minqing Sun, Yilun Jiang, Scott Sanner",
+      "authors": "Jiazhou Liang*, Yifan Liu*, David Guo*, Minqi Sun, Yilun Jiang, Scott Sanner",
       "venue": "Findings of ACL 2026",
       "year": "2026",
       "status": "Accepted",
       "description": "",
       "link": "https://arxiv.org/abs/2604.09698",
-      "contributionNote": ""
+      "contributionNote": "",
+      "codeLink": "https://github.com/D3Mlab/ICRS"
     },
     {
       "key": 1,
       "title": "VOGUE: A Multimodal Dataset for Conversational Recommendation in Fashion",
-      "authors": "David Guo*, Minqing Sun*, Yilun Jiang*, Jiazhou Liang, Scott Sanner",
+      "authors": "David Guo*, Minqi Sun*, Yilun Jiang*, Jiazhou Liang, Scott Sanner",
       "venue": "ACM UMAP 2026",
       "year": "2026",
       "status": "Accepted",
       "description": "",
       "link": "https://arxiv.org/abs/2510.21151",
-      "contributionNote": ""
+      "contributionNote": "",
+      "codeLink": "https://github.com/D3Mlab/vogue"
     }
   ]
 }

@@ -4,9 +4,18 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { IconArrowUpRight, IconMoon, IconSun } from "@tabler/icons-react";
 import portrait from "@/public/me.png";
+import spacMemTeaser from "@/public/publication-teasers/spac-mem.webp";
+import immersiveTeaser from "@/public/publication-teasers/immersive-recommendation.webp";
+import vogueTeaser from "@/public/publication-teasers/vogue.webp";
 import { LINKS } from "@/app/constants";
 import publications from "./research-publications.json";
 import styles from "./homepage.module.css";
+
+const teasers = {
+  2: { image: spacMemTeaser, alt: "Spatially grounded memory connecting scenes, dialogue, and persistent objects." },
+  0: { image: immersiveTeaser, alt: "Shoe-store recommendations highlighted with immersive item labels." },
+  1: { image: vogueTeaser, alt: "Five stages of a fashion recommendation conversation." },
+};
 
 export default function HomePage() {
   const [light, setLight] = useState(true);
@@ -52,12 +61,13 @@ export default function HomePage() {
               <div className={styles.eyebrow}>UNIVERSITY OF TORONTO · MASc</div>
               <h1 id="name">David Guo</h1>
               <p className={styles.discipline}>Machine learning &amp; human–AI interaction</p>
-              <p>I’m a MASc student at the University of Toronto, supervised by Prof. Scott Sanner, studying machine learning and human–AI interaction.</p>
-              <p>My work spans <strong>conversational recommendation</strong>, <strong>user modeling</strong>, and <strong>memory for AI assistants</strong>.</p>
+              <p>I’m a MASc student in the <a href={LINKS.lab}>Data-Driven Decision Making (D3M) Lab</a> at the University of Toronto, supervised by Prof. Scott Sanner, working on machine learning for interactive AI systems.</p>
+              <p>My work spans <strong>conversational recommendation</strong>, <strong>user modeling</strong>, and <strong>memory for Agentic systems</strong>, combining empirical studies of interaction with building and evaluating systems.</p>
               <div className={styles.links} aria-label="Professional links">
                 <a href={LINKS.cv}>CV <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
                 <a href="#contact">Email</a>
                 <a href={LINKS.github}>GitHub <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
+                <a href={LINKS.scholar}>Google Scholar <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
                 <a href={LINKS.linkedin}>LinkedIn <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
               </div>
             </div>
@@ -69,10 +79,18 @@ export default function HomePage() {
             <div className={styles.papers}>
               {publications.data.map((paper) => (
                 <article key={paper.key} className={`${styles.paper} ${paper.status.toLowerCase().startsWith('preprint') ? styles.preprint : ''}`}>
+                  <a className={styles.paperFigure} href={paper.link} aria-label={`Read ${paper.title}`}>
+                    <Image src={teasers[paper.key as keyof typeof teasers].image} alt={teasers[paper.key as keyof typeof teasers].alt} sizes="(max-width: 640px) calc(100vw - 72px), 220px" />
+                  </a>
+                  <div className={styles.paperDetails}>
                   <p className={styles.venue}>{paper.venue} <span>· {paper.status}</span></p>
                   <h3>{paper.link ? <a href={paper.link}>{paper.title}</a> : paper.title}</h3>
                   <p className={styles.authors}>{paper.authors.split(/(David Guo)/g).map((part, index) => part === "David Guo" ? <strong key={index}>{part}</strong> : part)}</p>
-                  {paper.link && <div className={styles.paperLinks}><a href={paper.link}>Paper <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a></div>}
+                  {(paper.link || paper.codeLink) && <div className={styles.paperLinks}>
+                    {paper.link && <a href={paper.link}>Paper <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>}
+                    {paper.codeLink && <a href={paper.codeLink}>Code <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>}
+                  </div>}
+                  </div>
                 </article>
               ))}
             </div>
@@ -95,7 +113,7 @@ export default function HomePage() {
             <div className={styles.contactDetails}>
               <div><span className={styles.contactLabel}>UNIVERSITY EMAIL</span><span className={styles.emailAddress}>davidmy [dot] guo [at] mail [dot] utoronto [dot] ca</span></div>
               <div><span className={styles.contactLabel}>LOCATION</span><span>Toronto, ON</span></div>
-              <div className={styles.contactProfiles}><span className={styles.contactLabel}>CV &amp; PROFILES</span><div className={styles.links}><a href={LINKS.cv}>CV</a><a href={LINKS.github}>GitHub</a><a href={LINKS.linkedin}>LinkedIn</a></div></div>
+              <div className={styles.contactProfiles}><span className={styles.contactLabel}>CV &amp; PROFILES</span><div className={styles.links}><a href={LINKS.cv}>CV</a><a href={LINKS.github}>GitHub</a><a href={LINKS.scholar}>Google Scholar</a><a href={LINKS.linkedin}>LinkedIn</a></div></div>
             </div>
           </section>
         </main>
