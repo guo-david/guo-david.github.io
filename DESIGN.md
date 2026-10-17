@@ -2,6 +2,9 @@
 
 Updated 2026-10-08. Apply these decisions to future homepage and design-study edits unless David changes them.
 
+- Profile wording update (2026-10-16, supersedes the older bio wording below): align with David’s LinkedIn positioning, “AI Researcher (MASc) @ UofT MIE | D3M Lab · Prof. Scott Sanner.” Research areas: interactive AI systems, conversational recommendation, user modeling, spatial & conversational memory, and human–AI interaction. Keep the two-paragraph bio, lab link, and supervisor attribution; use “spatial & conversational memory” in place of “memory for Agentic systems.” Search title: “David Guo | AI Researcher | University of Toronto.” Keep homepage, search/social descriptions, and Person metadata consistent with this positioning.
+- Social preview (2026-10-16): use `public/social-preview.png`, a 1200 × 630 light sage/lilac card in Manrope with David’s name, role, affiliation, supervisor, a compact research-topic summary, and the existing homepage portrait on the right. Regenerate with `node scripts/generate-social-preview.cjs`; use it for Open Graph and large-image Twitter cards. Dedicated paper pages are deferred; David is handling Search Console and external profile updates.
+
 - GitHub site: this version was approved for a local commit on 2026-10-05. Push or deploy only when David asks. Local preview uses port 3000.
 - Keep design studies local and outside website commits. Preserve all directions, typography, palettes, spacing, detail comparisons, mixer, and favorites/analytics. Update local content and screenshots together; the original site remains an archived baseline. Do not publish further study changes unless David asks.
 - Selected default: light, Cybercore, rounded (Manrope), sage (lilac + sage), compact, restrained. Keep dark-mode switching.

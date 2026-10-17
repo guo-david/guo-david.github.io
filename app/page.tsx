@@ -58,11 +58,11 @@ export default function HomePage() {
         <main id="main">
           <section className={styles.intro} aria-labelledby="name">
             <div className={styles.bio}>
-              <div className={styles.eyebrow}>UNIVERSITY OF TORONTO · MASc</div>
+              <div className={styles.eyebrow}>UNIVERSITY OF TORONTO MIE · AI RESEARCHER (MASc)</div>
               <h1 id="name">David Guo</h1>
-              <p className={styles.discipline}>Machine learning &amp; human–AI interaction</p>
-              <p>I’m a MASc student in the <a href={LINKS.lab}>Data-Driven Decision Making (D3M) Lab</a> at the University of Toronto, supervised by Prof. Scott Sanner, working on machine learning for interactive AI systems.</p>
-              <p>My work spans <strong>conversational recommendation</strong>, <strong>user modeling</strong>, and <strong>memory for Agentic systems</strong>, combining empirical studies of interaction with building and evaluating systems.</p>
+              <p className={styles.discipline}>Interactive AI systems &amp; human–AI interaction</p>
+              <p>I’m an AI researcher and MASc student in the <a href={LINKS.lab}>Data-Driven Decision Making (D3M) Lab</a> at the University of Toronto’s Department of Mechanical &amp; Industrial Engineering, supervised by Prof. Scott Sanner, working on machine learning for interactive AI systems.</p>
+              <p>My work spans <strong>conversational recommendation</strong>, <strong>user modeling</strong>, and <strong>spatial &amp; conversational memory</strong>, combining empirical studies of human–AI interaction with building and evaluating systems.</p>
               <div className={styles.links} aria-label="Professional links">
                 <a href={LINKS.cv}>CV <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
                 <a href="#contact">Email</a>
@@ -103,7 +103,7 @@ export default function HomePage() {
               <h3>An <strong>XR framework</strong> for interaction research grounded in persistent world state.</h3>
               <ul className={styles.researchTopics}>
                 <li>AI assistants in AR/XR</li>
-                <li>Memory and personalization</li>
+                <li>Spatial &amp; conversational memory and personalization</li>
                 <li>Learning from visual context</li>
               </ul>
             </article>
