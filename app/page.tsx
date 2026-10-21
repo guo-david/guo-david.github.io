@@ -113,6 +113,7 @@ export default function HomePage() {
             <div className={styles.contactDetails}>
               <div><span className={styles.contactLabel}>UNIVERSITY EMAIL</span><span className={styles.emailAddress}>davidmy [dot] guo [at] mail [dot] utoronto [dot] ca</span></div>
               <div><span className={styles.contactLabel}>LOCATION</span><span>Toronto, ON</span></div>
+              <div className={styles.contactProfiles}><span className={styles.contactLabel}>LAB</span><a href={LINKS.lab}>Data-Driven Decision Making Lab (D3M)</a></div>
               <div className={styles.contactProfiles}><span className={styles.contactLabel}>CV &amp; PROFILES</span><div className={styles.links}><a href={LINKS.cv}>CV</a><a href={LINKS.github}>GitHub</a><a href={LINKS.scholar}>Google Scholar</a><a href={LINKS.linkedin}>LinkedIn</a></div></div>
             </div>
           </section>

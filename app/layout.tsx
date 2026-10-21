@@ -10,7 +10,7 @@ import { LINKS } from './constants';
 const siteUrl = 'https://guo-david.github.io/';
 const title = 'David Guo | AI Researcher | University of Toronto';
 const description =
-  'David Guo is an AI researcher and MASc student in Information Engineering at the University of Toronto’s D3M Lab, studying interactive AI systems, recommendation, user modeling, and spatial & conversational memory.';
+  'David Guo is an AI researcher and MASc student in Information Engineering at the University of Toronto’s Data-Driven Decision Making Lab (D3M), studying interactive AI systems, recommendation, user modeling, and spatial & conversational memory.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
