@@ -10,7 +10,7 @@ import { LINKS } from './constants';
 const siteUrl = 'https://guo-david.github.io/';
 const title = 'David Guo | AI Researcher | University of Toronto';
 const description =
-  'David Guo is an AI researcher (MASc) at the University of Toronto’s D3M Lab, studying interactive AI systems, recommendation, user modeling, and spatial & conversational memory.';
+  'David Guo is an AI researcher and MASc student in Information Engineering at the University of Toronto’s D3M Lab, studying interactive AI systems, recommendation, user modeling, and spatial & conversational memory.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: '/social-preview.png',
         width: 1200,
         height: 630,
-        alt: 'David Guo — AI Researcher (MASc), University of Toronto MIE, D3M Lab. Interactive AI systems, conversational recommendation, user modeling, spatial & conversational memory, and human–AI interaction.',
+        alt: 'David Guo — AI Researcher (MASc), University of Toronto, Information Engineering, D3M Lab. Interactive AI systems, conversational recommendation, user modeling, spatial & conversational memory, and human–AI interaction.',
       },
     ],
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/social-preview.png',
-        alt: 'David Guo — AI Researcher (MASc), University of Toronto MIE, D3M Lab.',
+        alt: 'David Guo — AI Researcher (MASc), University of Toronto, Information Engineering, D3M Lab.',
       },
     ],
   },
@@ -58,7 +58,7 @@ const person = {
     { '@type': 'CollegeOrUniversity', name: 'University of Toronto' },
     {
       '@type': 'Organization',
-      name: 'Department of Mechanical & Industrial Engineering',
+      name: 'Information Engineering',
       parentOrganization: { '@type': 'CollegeOrUniversity', name: 'University of Toronto' },
     },
     { '@type': 'Organization', name: 'Data-Driven Decision Making (D3M) Lab', url: LINKS.lab },

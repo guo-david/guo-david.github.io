@@ -63,7 +63,7 @@ async function main() {
     label('UNIVERSITY OF TORONTO', 18, 836, 80, '#56604f'),
     label('David Guo', 86, 68, 162),
     label('AI Researcher (MASc)', 34, 72, 271, '#654390'),
-    label('University of Toronto MIE · D3M Lab', 26, 72, 326),
+    label('Information Engineering · D3M Lab', 26, 72, 326),
     label('Supervised by Prof. Scott Sanner', 22, 72, 370, '#56604f'),
     label('Interactive AI systems', 24, 96, 438),
     label('Conversational recommendation · User modeling', 24, 96, 480),

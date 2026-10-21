@@ -58,10 +58,10 @@ export default function HomePage() {
         <main id="main">
           <section className={styles.intro} aria-labelledby="name">
             <div className={styles.bio}>
-              <div className={styles.eyebrow}>UNIVERSITY OF TORONTO MIE · AI RESEARCHER (MASc)</div>
+              <div className={styles.eyebrow}>UNIVERSITY OF TORONTO · INFORMATION ENGINEERING</div>
               <h1 id="name">David Guo</h1>
               <p className={styles.discipline}>Interactive AI systems &amp; human–AI interaction</p>
-              <p>I’m an AI researcher and MASc student in the <a href={LINKS.lab}>Data-Driven Decision Making (D3M) Lab</a> at the University of Toronto’s Department of Mechanical &amp; Industrial Engineering, supervised by Prof. Scott Sanner, working on machine learning for interactive AI systems.</p>
+              <p>I’m an AI researcher and MASc student in Information Engineering at the University of Toronto’s <a href={LINKS.lab}>D3M Lab</a>, supervised by Prof. Scott Sanner, working on machine learning for interactive AI systems.</p>
               <p>My work spans <strong>conversational recommendation</strong>, <strong>user modeling</strong>, and <strong>spatial &amp; conversational memory</strong>, combining empirical studies of human–AI interaction with building and evaluating systems.</p>
               <div className={styles.links} aria-label="Professional links">
                 <a href={LINKS.cv}>CV <IconArrowUpRight className={styles.linkIcon} size={14} stroke={1.7} aria-hidden="true" focusable="false" /></a>
