@@ -1,6 +1,6 @@
 # Website decisions
 
-Updated 2026-10-21. Apply these decisions to future homepage and design-study edits unless David changes them.
+Updated 2026-10-23. Apply these decisions to future homepage and design-study edits unless David changes them.
 
 - Lab searchability (2026-10-21): keep “D3M Lab” in the opening bio; display the linked full name “Data-Driven Decision Making Lab (D3M)” under Contact and include it in the search/social description. Preserve the full lab name in structured metadata.
 - Program wording update (2026-10-21, supersedes MIE/department wording below): header “UNIVERSITY OF TORONTO · INFORMATION ENGINEERING”. Bio opens “I’m an AI researcher and MASc student in Information Engineering at the University of Toronto’s D3M Lab, supervised by Prof. Scott Sanner…”; preserve the lab link, second paragraph, and research focus. Use Information Engineering in metadata, social previews, and the downloadable CV’s M.A.Sc. education entry.
@@ -18,7 +18,7 @@ Updated 2026-10-21. Apply these decisions to future homepage and design-study ed
 - Current Research: Ongoing. Title: An **XR framework** for interaction research grounded in persistent world state. Bullets: AI assistants in AR/XR; Memory and personalization; Learning from visual context. No explanatory paragraph or flow diagram.
 - Contact: university email, Toronto location, CV, GitHub, LinkedIn. Display davidmy [dot] guo [at] mail [dot] utoronto [dot] ca; no raw-address mailto links in the current homepage or study specimens.
 
-- CV: use the current PDF from `resume (8).pdf`, renamed to `public/David-Guo-ML-Researcher-CV.pdf`. Link to `/David-Guo-ML-Researcher-CV.pdf` so local previews and the study serve the updated document.
+- CV: use the current PDF from `resume (30).pdf` (updated 2026-10-23), renamed to `public/David-Guo-ML-Researcher-CV.pdf`. Link to `/David-Guo-ML-Researcher-CV.pdf` so local previews and the study serve the updated document.
 
 - Link arrows and theme icons use SVG icons, never Unicode characters that iOS can render as emoji.
 
